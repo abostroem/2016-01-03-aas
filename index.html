@@ -1,18 +1,18 @@
 ---
 layout: workshop
 root: .
-venue: FIXME      # brief name of host site without address (e.g., "Euphoric State University")
-address: FIXME    # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
-country: FIXME    # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: FIXME   # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: FIXME     # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: FIXME  # human-readable date (e.g., "Feb 17-18, 2020")
-humantime: FIXME  # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME  # use YYYY-MM-DD format like "2015-01-01"
-enddate: FIXME    # use YYYY-MM-DD format like" 2015-01-02"
-instructor: FIXME # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: FIXME     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: FIXME    # contact email address for workshop organizer, such as "grace@hopper.org"
+venue: "American Astronomical Society 227th Meeting"      # brief name of host site without address (e.g., "Euphoric State University")
+address: "St. George 106, 6000 West Osceola Parkway, Kissimmee, Florida"    # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
+country: "US"    # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "EN"   # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
+latlng: "28.342395,-81.526977"     # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
+humandate: "Jan 03-04, 2016"  # human-readable date (e.g., "Feb 17-18, 2020")
+humantime: "9:00 am - 5:30 pm"  # human-readable time (e.g., "9:00 am - 4:30 pm")
+startdate: "2016-01-03"  # use YYYY-MM-DD format like "2015-01-01"
+enddate: "2016-01-04"    # use YYYY-MM-DD format like" 2015-01-02"
+instructor: "Azalee Bostroem, Justin Ely, Camille Avestruz" # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: []     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: "kabostroem@ucdavis.edu"    # contact email address for workshop organizer, such as "grace@hopper.org"
 etherpad:         # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 ---
@@ -60,6 +60,28 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   management, and task automation.  Participants will be encouraged to
   help one another and to apply what they have learned to their own
   research problems.
+
+
+  Computing is now an integral part of every aspect of astronomy and
+  astrophysics, but most scientists are never taught how to build, use,
+  validate, and share software. As a result, many spend hours or days doing
+  things badly that could be done well in just a few minutes. The goal of the
+  Software Carpentry Workshop is to change that. The tools presented at the 2
+  day workshop will enable astronomers to spend less time wrestling with
+  software and more time doing useful research. Furthermore, good quality,
+  well tested code will make their science results easier to confirm, distribute,
+  and update. The Software Carpentry Workshop at the 227th AAS consists of
+  short tutorials alternating with hands-on practical exercises and will cover
+  the core software skills needed construct, use, verify, and share software
+  in astronomy. Sunday’s tutorials will be comprised of shell automation,
+  basic python programming, and code review. Monday’s sessions will shift
+  to focus on advanced python, including numerical and astronomy oriented
+  computing, and version control with git. The workshop will be run by a set
+  of three certified instructors and a team of helpers.
+  A group list will be compiled approximately one month prior to
+  the workshop to distribute software requirements and collaborative troubleshooting.
+  Workshop participants are also encouraged to participate in the Hack Day to apply
+  their boot camp skills.
 </p>
 <p align="center">
   <em>
@@ -77,9 +99,13 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 -->
 <p id="who">
   <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
-  <strong>You don't need to have any previous knowledge of the tools that will
-    be presented at the workshop.</strong>
+  The course is aimed at
+  astronomers at all stages of their education and careers who wish to learn
+  computational tools to increase the reproducibility and efficiency of their
+  work. Participants should have some knowledge of programming (not necessarily
+  Python) and have some familiarity with the shell command line (i.e.
+  navigating directories on the shell command line). <strong>Specific knowledge of
+  Python and Git are not required. Registration is for both days.</strong>
 </p>
 
 <!--
@@ -141,7 +167,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   to match your plans.  You may also want to change 'Day 1' and 'Day
   2' to be actual dates or days of the week.
 -->
-<h2 id="schedule">Schedule</h2>
+<h2 id="schedule">Tentative Schedule</h2>
 
 <div class="row">
   <div class="col-md-6">
@@ -149,10 +175,12 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
     <table class="table table-striped">
       <tr> <td>Arrival</td>  <td><a href='{{ site.swc_pre_survey }}{{ site.github.project_title }}'>Pre-workshop Survey</a></td> </tr>
       <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
+      <tr> <td>10:30</td> <td>Break</td> </tr>
+      <tr> <td>11:00</td>  <td>Building programs with Python</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
       <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
+      <tr> <td>14:30</td>  <td>Break</td> </tr>
+      <tr> <td>15:00</td>  <td> Code Review</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
   </div>
@@ -160,10 +188,12 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
     <h3>Day 2</h3>
     <table class="table table-striped">
       <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
+      <tr> <td>10:30</td>  <td>Break</td> </tr>
+      <tr> <td>11:00</td>  <td>Version control with Git</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
+      <tr> <td>13:00</td>  <td>Advance python</td> </tr>
+      <tr> <td>14:30</td>  <td>Break</td> </tr>
+      <tr> <td>15:00</td>  <td>Advance python</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
       <tr> <td>Dismissal</td>  <td><a href='{{ site.swc_post_survey }}{{ site.github.project_title }}'>Post-workshop Survey</a></td> </tr>
     </table>
@@ -280,20 +310,6 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <li>Open licenses</li>
       <li>Where to host work, and why</li>
       <li><a href="{{site.swc_githubio}}/git-novice/reference.html">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="col-md-6">
-    <h3 id="syllabus-sql">Managing Data with SQL</h3>
-    <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_githubio}}/sql-novice-survey/reference.html">Reference...</a></li>
     </ul>
   </div>
 </div>
@@ -596,87 +612,6 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   </p>
 </div> <!-- End of 'Python' section. -->
 
-<div id="r"> <!-- Start of 'R' section. -->
-  <h3>R</h3>
-
-  <p>
-    <a href="http://www.r-project.org">R</a> is a programming language
-    that is especially powerful for data exploration, visualization, and
-    statistical analysis. To interact with R, we use
-    <a href="http://www.rstudio.com/">RStudio</a>.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="r-windows">Windows</h4>
-      <p>
-        Install R by downloading and running
-        <a href="http://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-        Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="r-macosx">Mac OS X</h4>
-      <p>
-        Install R by downloading and running
-        <a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-        Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="r-linux">Linux</h4>
-      <p>
-        You can download the binary files for your distribution
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>. Or
-        you can use your package manager (e.g. for Debian/Ubuntu
-        run <code>sudo apt-get install r-base</code> and for Fedora run
-        <code>sudo yum install R</code>).  Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-  </div>
-</div> <!-- End of 'R' section. -->
-
-<div id="sql"> <!-- Start of 'SQLite' section. -->
-  <h3>SQLite</h3>
-
-  <p>
-    SQL is a specialized programming language used with databases.  We
-    use a simple database manager called
-    <a href="http://www.sqlite.org/">SQLite</a> in our lessons.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="sql-windows">Windows</h4>
-      <p>
-        The <a href="{{site.swc_github}}/windows-installer">Software Carpentry Windows Installer</a>
-        installs SQLite for Windows.
-        If you used the installer to configure nano, you don't need to run it again.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-macosx">Mac OS X</h4>
-      <p>
-        SQLite comes pre-installed on Mac OS X.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-linux">Linux</h4>
-      <p>
-        SQLite comes pre-installed on Linux.
-      </p>
-    </div>
-  </div>
-
-  <p><strong>If you installed Anaconda, it also has a copy of SQLite
-    <a href="https://github.com/ContinuumIO/anaconda-issues/issues/307">without support to <code>readline</code></a>.
-    Instructors will provide a workaround for it if needed.</strong></p>
-</div> <!-- End of 'SQLite' section. -->
 
 <!--
   Uncomment this section if you are using our virtual machine.
