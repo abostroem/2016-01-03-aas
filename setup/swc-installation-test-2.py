@@ -90,22 +90,22 @@ CHECKS = [
     'virtual-browser',
 # Version control
     'git',
-    'hg',              # Command line tool
+#    'hg',              # Command line tool
     #'mercurial',       # Python package
-    'EasyMercurial',
+#    'EasyMercurial',
 # Build tools and packaging
-    'make',
+#    'make',
     'virtual-pypi-installer',
     'setuptools',
     #'xcode',
 # Testing
-    'nosetests',       # Command line tool
-    'nose',            # Python package
-    'py.test',         # Command line tool
-    'pytest',          # Python package
+#    'nosetests',       # Command line tool
+#    'nose',            # Python package
+#    'py.test',         # Command line tool
+#    'pytest',          # Python package
 # SQL
-    'sqlite3',         # Command line tool
-    'sqlite3-python',  # Python package
+#    'sqlite3',         # Command line tool
+#    'sqlite3-python',  # Python package
 # Python
     'python',
     'ipython',         # Command line tool
@@ -144,7 +144,7 @@ class DependencyError (Exception):
         ('Linux', '*', 'EasyMercurial'): 'http://easyhg.org/download.html#download-linux',
         ('Darwin', '*', 'EasyMercurial'): 'http://easyhg.org/download.html#download-mac',
         ('Windows', '*', 'EasyMercurial'): 'http://easyhg.org/download.html#download-windows',
-        ('*', '*', 'EasyMercurial'): 'http://easyhg.org/download.html',
+       ('*', '*', 'EasyMercurial'): 'http://easyhg.org/download.html',
         ('*', '*', 'argparse'): 'https://pypi.python.org/pypi/argparse#installation',
         ('*', '*', 'ash'): 'http://www.in-ulm.de/~mascheck/various/ash/',
         ('*', '*', 'bash'): 'http://www.gnu.org/software/bash/manual/html_node/Basic-Installation.html#Basic-Installation',
