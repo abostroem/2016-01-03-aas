@@ -25,18 +25,17 @@ def print_usage(sa):
         print("Beeps a few times after the duration is over.")
         print("Press Ctrl-C to terminate the alarm clock early.")
         sys.exit(1)
+def test_valid_input(sa):
+    try:
+        minutes = int(sa[1])
+    except ValueError:
+        print("Invalid numeric value ({}) for minutes".format(sa[1]))
+        print("Should be an integer >= 0")
+        sys.exit(1)
 
-print_usage(sys.argv)
-try:
-    minutes = int(sa[1])
-except ValueError:
-    print("Invalid numeric value ({}) for minutes".format(sa[1]))
-    print("Should be an integer >= 0")
-    sys.exit(1)
-
-if minutes < 0:
-    print("Invalid value for minutes, should be >= 0")
-    sys.exit(1)
+    if minutes < 0:
+        print("Invalid value for minutes, should be >= 0")
+        sys.exit(1)
 
 seconds = minutes * 60
 
@@ -56,5 +55,6 @@ try:
 except KeyboardInterrupt:
     print("Interrupted by user")
     sys.exit(1)
-
+print_usage(sys.argv)
+test_valid_input(sys.argv)
 # EOF
