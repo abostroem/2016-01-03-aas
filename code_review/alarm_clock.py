@@ -38,11 +38,12 @@ def test_valid_input(sa):
         sys.exit(1)
 
 seconds = minutes * 60
-
-if minutes == 1:
-    unit_word = " minute"
-else:
-    unit_word = " minutes"
+def set_grammar(minutes):
+    if minutes == 1:
+        unit_word = " minute"
+    else:
+        unit_word = " minutes"
+    return unit_word
 
 try:
     if minutes > 0:
