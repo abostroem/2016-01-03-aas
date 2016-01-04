@@ -58,8 +58,10 @@ def run_alarm_clock(minutes, unit_word):
     except KeyboardInterrupt:
         print("Interrupted by user")
         sys.exit(1)
-print_usage(sys.argv)
-minutes = test_valid_input(sys.argv)
-unit_word = set_grammar(minutes)
-run_alarm_clock(minutes, unit_word)
+
+if __name__ == "__main__":
+    print_usage(sys.argv)
+    minutes = test_valid_input(sys.argv)
+    unit_word = set_grammar(minutes)
+    run_alarm_clock(minutes, unit_word)
 # EOF
