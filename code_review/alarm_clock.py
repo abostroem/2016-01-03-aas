@@ -17,7 +17,7 @@ def print_usage(sa):
     '''
     Print command line usage when user tries to run without arguments
     '''
-    lsa = len(sys.argv)
+    lsa = len(sa)
     if lsa != 2:
         print("Usage: [ python ] alarm_clock.py duration_in_minutes")
         print("Example: [ python ] alarm_clock.py 10")
