@@ -36,8 +36,8 @@ def test_valid_input(sa):
     if minutes < 0:
         print("Invalid value for minutes, should be >= 0")
         sys.exit(1)
+    return minutes
 
-seconds = minutes * 60
 def set_grammar(minutes):
     if minutes == 1:
         unit_word = " minute"
@@ -45,17 +45,21 @@ def set_grammar(minutes):
         unit_word = " minutes"
     return unit_word
 
-try:
-    if minutes > 0:
-        print("Sleeping for " + str(minutes) + unit_word)
-        sleep(seconds)
-    print("Wake up")
-    for i in range(5):
-        print(chr(7),)
-        sleep(1)
-except KeyboardInterrupt:
-    print("Interrupted by user")
-    sys.exit(1)
+def run_alarm_clock(minutes, unit_word):
+    seconds = minutes * 60
+    try:
+        if minutes > 0:
+            print("Sleeping for " + str(minutes) + unit_word)
+            sleep(seconds)
+        print("Wake up")
+        for i in range(5):
+            print(chr(7),)
+            sleep(1)
+    except KeyboardInterrupt:
+        print("Interrupted by user")
+        sys.exit(1)
 print_usage(sys.argv)
-test_valid_input(sys.argv)
+minutes = test_valid_input(sys.argv)
+unit_word = set_grammar(minutes)
+run_alarm_clock(minutes, unit_word)
 # EOF
