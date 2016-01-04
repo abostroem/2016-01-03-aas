@@ -13,16 +13,20 @@ import sys
 import string
 from time import sleep
 
-sa = sys.argv
-lsa = len(sys.argv)
-if lsa != 2:
-    print("Usage: [ python ] alarm_clock.py duration_in_minutes")
-    print("Example: [ python ] alarm_clock.py 10")
-    print("Use a value of 0 minutes for testing the alarm immediately.")
-    print("Beeps a few times after the duration is over.")
-    print("Press Ctrl-C to terminate the alarm clock early.")
-    sys.exit(1)
+def print_usage(sa):
+    '''
+    Print command line usage when user tries to run without arguments
+    '''
+    lsa = len(sys.argv)
+    if lsa != 2:
+        print("Usage: [ python ] alarm_clock.py duration_in_minutes")
+        print("Example: [ python ] alarm_clock.py 10")
+        print("Use a value of 0 minutes for testing the alarm immediately.")
+        print("Beeps a few times after the duration is over.")
+        print("Press Ctrl-C to terminate the alarm clock early.")
+        sys.exit(1)
 
+print_usage(sys.argv)
 try:
     minutes = int(sa[1])
 except ValueError:
